@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    height: 60px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    z-index: 1;
+}
+header #mobile-menu {
+    display: none;
+}
+#logo, #name {
+    color: rgb(255, 255, 255);
+    letter-spacing: .05em;
+    font-family: Impact;
+    font-style: italic;
+    text-transform: uppercase;
+}
+h3{
+    text-decoration: none;
+    margin: 7px 0;
+    font-family: Arial;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.topicos{
+    color: #fff;
+    text-decoration: none;
+}
+
+.topicos:hover{
+    border-bottom: 1px solid white;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* -------------------------------------- */
+/*             Efeito Paralax             */
+/* -------------------------------------- */
+#area-principal{
+    height: 700px;
+    background-image: url(img/Background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* -------------------------------------- */
+/*             Section Area  1            */
+/* -------------------------------------- */
+section{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+
+#imagem{
+    height: 460px; 
+    display: inline-block; 
+    margin: 80px auto;  
+}
+#apresentacao{
+    width: 460px;
+    display: inline-block;
+    color: #fff;
+    height: 220px; 
+    font-family: Impact;
+    font-size: 1.5em;
+    margin-top: 205px;
+    margin-left: 50px;
+}
+/*Cursor da animação de digitação*/
+#name::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.btn-linkedin,.btn-link {
+    display: block;
+    width: 12em;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #d401a5;
+    font-family: Arial;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-linkedin:hover,.btn-link:hover{
+    background: #4e002f;
+    letter-spacing: 0.2em;
+}
+
+/* -------------------------------------- */
+/*             Section Area  2            */
+/* -------------------------------------- */
+.titulo{
+    font-size: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    display: inline;
+    color: white;
+}
+#eu{
+    margin:100px 0 ;
+    float: left;
+}
+#sobre{
+    margin-top: 150px;
+    padding: 10px; 
+}
+p{
+    color: white;
+    font-family: 'Trebuchet MS';
+    margin: 16px;
+    padding: 5px;
+    letter-spacing: 0.1em;
+}
+/* -------------------------------------- */
+/*             Section Area  3            */
+/* -------------------------------------- */
+.projetos{
+    width: 100%;
+    display: block;
+}
+.titulo2{
+    font-size: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0 auto; 
+    color: #fff;
+    
+}
+.cards-section{
+    margin: 60px 72px;
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    width: 300px;
+    height: 350px;
+    margin: 60px 72px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid #d401a5;
+}
+.btn-link{
+    width: 18em;
+    padding: 17px;
+    margin: 16px auto 0px auto;
+}
+.btn-ver{
+    border: 2px solid #4e002f;
+    width: 300px;
+    padding: 10px 15px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    position: static;
+    font-family: Arial;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-ver:hover{
+    background: #4e002f;
+    letter-spacing: 0.2em;
+}
+/* -------------------------------------- */
+/*             Section Area  4            */
+/* -------------------------------------- */
+.cardsN{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerN{
+    width: 100%;
+    min-height: 100vh;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+}
+
+.box{
+    width: 250px;
+    height: 230px;
+    border: 1px solid #505050;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 20px;
+}
+
+.box h3{
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.box i.fa{
+    color: #404040;
+    position: absolute;
+    top: 1%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 10rem;
+    transition: .5s ease-in-out;
+}
+
+.box:hover i.fa{
+    font-size: 3rem;
+    transform: translate(90px,-160px);
+}
+
+.box .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -100%; 
+    transition: .5s ease-in-out;
+    padding: 70px 20px;
+}
+
+.box .content::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #99999922;
+}
+
+.box:hover .content{
+    transform: translateX(100%);
+}
+
+.box .content p{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 75%;
+    margin-top: 3%;
+}
+
+ #habilidades{
+    font-size: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    display: block;
+    text-align: center;
+    margin: 10px; 
+} 
+
+
+/* -------------------------------------- */
+/*               Rodapé                   */
+/* -------------------------------------- */
+
+
+#rodape{
+    width: 100%;
+    height: 26%;
+    margin: auto;
+}
+
+#rodape h4{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    padding: 5px;
+    float: left;
+}
+
+#rodapeicone{
+    float: right;
+}
+
+/*role para revelar*/
+
+.reveal{
+    position: relative;
+    transform: translateY(144px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 1180px) {
+    .cards-section{
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: left;
+    }
+    .cards{
+        
+        width: 800px;
+        height: 350px;
+        margin: 60px 152px;
+        scroll-snap-align: start;
+    }
+}
+@media (max-width:520px) {
+
+    #sobre{
+        width: 100%;
+        padding: 0;
+    }
+    #sobre p{
+        display: inline-block;
+    }
+
+    #eu img{
+        display: none;
+    }
+}
+/* Menu hamburguer */
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.topicos:hover{
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform:uppercase ;
+    letter-spacing: 4px;
+}
+ 
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) { 
+    body {
+        overflow-x: hidden;
+    }
+
+   .nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vh;
+    height: 92vh;
+    background: #0e0e13;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+   }
+
+   .nav-list li {
+    margin-left: 0;
+    opacity: 1;
+   }
+
+   .mobile-menu{
+    display: block;
+   }
+ }
+
+ .nav-list.active {
+    transform: translateX(0);
+ }
+
+ @keyframes navLinksFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+ .mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+ }
+
+ .mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
