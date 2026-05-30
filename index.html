@@ -1,201 +1,563 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portifólio | Larissa Balieiro</title>
-    <link rel="icon" href="img/olho.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
-<body>
-    <header><!--Inicio Cabeçalho-->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/LB.ico" type="image/x-icon" />
+    <title>Larissa Balieiro</title>
 
-      <nav>
-        <h1 id="logo"> &lt;LB/&gt;</LB></h1>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="hero-section" id="inicio">
+      <main class="main-container">
+        <img
+          src="img/face.jpg"
+          alt="Foto de Perfil de Larissa Balieiro"
+          class="profile-img"
+        />
+
+        <h2>
+          Olá, meu nome é Larissa.<br />Sou analista e desenvolvedora de
+          sistemas.
+        </h2>
+
+        <p>
+          Desenvolvedora focada em construir soluções eficientes, unindo
+          criatividade, tecnologia e aprendizado contínuo.
+        </p>
+
+        <div class="links-wrapper">
+          <a
+            href="https://github.com/LariBalieiro"
+            class="btn-social"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/larissa-balieiro-020833191/"
+            class="btn-social"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="files/Larissa_Balieiro.pdf"
+            class="btn-social"
+            target="_blank"
+            ><i class="fa-regular fa-file-lines"></i
+          ></a>
+          <a
+            href="mailto:larissa.cristina.balieiro@gmail.com"
+            class="btn-social"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="#projetos" class="btn-explore"> Explore Mais </a>
         </div>
-        <ul class="nav-list">
-          <li>
-            <a class="topicos"  href="">Inicio</a>
-          </li>
-          <li>
-            <a class="topicos" href="#sobremim">Sobre Mim</a>
-          </li>
-          <li >
-            <a class="topicos"  href="#projeto">Projetos</a>
-          </li>
-          <li >
-            <a class="topicos" href="#habilidades">Habilidades</a>
-          </li>
-        </ul>
-      </nav>
+      </main>
+    </section>
 
-    </header><!--Fim Cabeçalho-->
+    <section class="projects-section" id="projetos">
+      <div class="bento-grid">
+        <div class="bento-card row-span-2">
+          <div class="h-100">
+            <div class="card-header">
+              <i class="fa-solid fa-location-dot"></i> Localização
+            </div>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.732528714256!2d-47.13088422393401!3d-22.886336937141945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c78fae251b2d%3A0xdb28ee15fba04eb0!2sRua%20dos%20Cambar%C3%A1s%2C%20150%20-%20Vila%20Boa%20Vista%2C%20Campinas%20-%20SP%2C%2013064-740!5e0!3m2!1spt-BR!2sbr!4v1780008313654!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
 
-      <section id="area-principal" ><!--Inicio Sessão1-->
+        <div class="bento-card col-span-2">
+          <div class="app-flex-content">
+            <div class="flex-grow-1">
+              <div class="card-header">
+                <i class="fa-solid fa-briefcase"></i> Projeto
+              </div>
+              <div class="card-title">Colaboradores</div>
+              <div class="card-desc">
+                Esta plataforma foi desenvolvida como um projeto de estudo
+                focado em PHP, para o gerenciamento robusto do banco de dados.
+                Construída seguindo a arquitetura MVC, a aplicação centraliza
+                informações vitais e recursos relevantes para o dia a dia dos
+                funcionários.
+              </div>
+            </div>
+            <img src="#" class="app-mockup-img" alt="App Screen" />
+          </div>
+        </div>
 
-        
-  
+        <div class="bento-card col-span-2">
+          <div class="card-header">
+            <i class="fa-solid fa-layer-group"></i> Habilidades
+          </div>
+
+          <div class="marquee-container" id="techMarquee">
+            <div class="marquee-track" id="marqueeTrack">
+              <div class="tech-logo-item" title="HTML5">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                />
+              </div>
+              <div class="tech-logo-item" title="CSS3">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                />
+              </div>
+              <div class="tech-logo-item" title="JavaScript">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                  alt="JS"
+                />
+              </div>
+              <div class="tech-logo-item" title="TypeScript">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                  alt="TS"
+                />
+              </div>
+              <div class="tech-logo-item" title="React">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                  alt="React"
+                />
+              </div>
+              <div class="tech-logo-item" title="Scss">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+                  alt="Scss"
+                />
+              </div>
+              <div class="tech-logo-item" title="TailwindCSS">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="TailwindCSS"
+                />
+              </div>
+              <div class="tech-logo-item" title="Bootstrap">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
+                  alt="Bootstrap"
+                />
+              </div>
+              <div class="tech-logo-item" title="Jquery">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg"
+                  alt="jQuery"
+                />
+              </div>
+              <div class="tech-logo-item" title="Node.js">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                  alt="Node"
+                />
+              </div>
+              <div class="tech-logo-item" title="PHP">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                  alt="PHP"
+                />
+              </div>
+              <div class="tech-logo-item" title="Laravel">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                  alt="Laravel"
+                />
+              </div>
+              <div class="tech-logo-item" title="C#">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                  alt="C#"
+                />
+              </div>
+              <div class="tech-logo-item" title="SQL">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+                  alt="SQL"
+                />
+              </div>
+              <div class="tech-logo-item" title="MySQL">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                />
+              </div>
+              <div class="tech-logo-item" title="PostgreSQL">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                />
+              </div>
+              <div class="tech-logo-item" title="Docker">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+                  alt="Docker"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-title" style="font-size: 1.1rem; margin-top: 15px">
+            Minhas competências
+          </div>
+          <p>
+            Atualmente focada em aprimorar os conhecimentos através do
+            desenvolvimento de projetos práticos.
+          </p>
+        </div>
+
+        <div class="bento-card col-span-2">
           <div>
-            <img id="imagem" src="img/lari3.png" alt="">
+            <div class="card-header">
+              <i class="fa-brands fa-github"></i> Github atividades
+            </div>
+            <div class="github-widget">
+              <div align="center">
+                <img
+                  src="https://github.com/LariBalieiro/LariBalieiro/raw/output/github-contribution-grid-snake.svg"
+                  alt="Snake animation"
+                  style="width: 100%; border-radius: 8px"
+                />
+              </div>
+            </div>
           </div>
-  
-          <div id="apresentacao">
-            <h3>Oi, eu sou </h3> 
-              <h1 id="name"></h1>
-            <h3>  Web Desenvolvedora! </h3>
-            <a href="https://www.linkedin.com/in/larissa-balieiro-020833191/" class="btn-linkedin">Linkedin</a>
-          </div>
-  
-        
-  
-      </section><!--Fim Sessão1-->
+        </div>
 
-      <section class="reveal"><!--Inicio Sessão2-->
-
-        
-          <a name="sobremim">
-          
-          <div id="eu">
-            <img  src="img/Eu.png" alt="" width="500" height="500">
+        <div class="bento-card">
+          <div>
+            <iframe
+              style="border-radius: 12px; width: 99%; height: 152px; border: 0"
+              src="https://open.spotify.com/embed/track/6u7gmPOz7pzzaeR9xSBpsR?utm_source=generator"
+              allowfullscreen=""
+              allow="
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                fullscreen;
+                picture-in-picture;
+              "
+              loading="lazy"
+            >
+            </iframe>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div id="sobre">
-            <h1 class="titulo">Sobre Mim</h1>
-            <p>
-                Estudante de Análise e Desenvolvimento de Sistemas e cursos livre voltados para desenvolvimento 
-              Web e Intraestrutura. Habilidades em programação Front-End e Back-end, desenvolvida através de 
-              projetos e iniciativas universitárias.
-            </p>
-            <p>
-                Tenho grande conhecimento com Front-end, sendo: HTML, CSS , 
-              Javascript e bootstrap. Trabalhei e tenho básico conhecimento com plataformas de gerenciamento de 
-              projetos e sistema de versionamento, sendo: Git, Github e Trello.
-            </p>
-            <p>
-                Forte perfil de trabalho em equipe adquiridos em trabalho voluntário para o Governo do Estado de 
-              São Paulo.
-            </p>
+    <section class="milestones-section" id="projeto">
+      <div class="milestones-header-box">
+        <div>
+          <div class="milestones-tag">
+            <i class="fa-solid fa-briefcase"></i> Projetos
           </div>
+          <h3 class="milestones-title">
+            Veja um pouco mais sobre os meus Projetos
+          </h3>
+          <p class="milestones-subtitle">
+            Apresento aqui projetos que demonstram meu compromisso com a
+            excelência técnica e inovação no desenvolvimento de software, sempre
+            em busca de novos desafios.
+          </p>
+        </div>
+        <a
+          href="https://github.com/LariBalieiro?tab=repositories"
+          class="btn-view-all"
+        >
+          Veja outros projetos <i class="fa-solid fa-arrow-right"></i>
         </a>
-      </section><!--Fim Sessão2-->
+      </div>
 
-      <section id="area-principal" class="projetos" ><!--Inicio Sessão3-->
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="project-showcase-card h-100">
+            <div class="project-cover-wrapper">
+              <img src="#" alt="Colaboradores" />
+            </div>
+            <div class="project-year">2025</div>
+            <h4 class="project-display-title">
+              Colaboradores: Aplicativo de Gestão de Holerites e Benefícios.
+            </h4>
+            <p class="project-display-desc">
+              Aplicativo de Gestão de Holerites e Benefícios: uma plataforma
+              intuitiva que centraliza o acesso a contracheques, registro de
+              ponto e benefícios, oferecendo transparência e praticidade aos
+              colaboradores.
+            </p>
+            <a href="#" class="project-action-link"
+              >Ver mais
+              <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="project-showcase-card h-100">
+            <div class="project-cover-wrapper">
+              <img src="#" alt="Lanna Make" />
+            </div>
+            <div class="project-year">2022</div>
+            <h4 class="project-display-title">
+              Lanna Make: Site de maquiagem e beleza
+            </h4>
+            <p class="project-display-desc">
+              Desenvolvi a plataforma de vendas online da Lanna Make, criando um
+              ambiente virtual ágil para navegação de produtos, leitura de
+              avaliações e realização de compras com foco total na usabilidade
+              do cliente.
+            </p>
+            <a href="#" class="project-action-link"
+              >Ver mais
+              <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section" id="saved">
+      <div class="milestones-header-box">
+        <div class="milestones-tag">
+          <i class="fa-regular fa-bookmark"></i> Resumo
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-12 col-md-6">
+          <h4 class="timeline-column-title">
+            <i class="fa-solid fa-graduation-cap"></i> Educação
+          </h4>
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">Tecnólogo</div>
+              <h5 class="timeline-title">
+                Análise e Desenvolvimento de Sistemas
+              </h5>
+              <div class="timeline-institution">Faculdade de Tecnologia</div>
+              <p class="timeline-desc">
+                Graduação tecnológica em Análise e Desenvolvimento de Sistemas
+                pela UNIP. O curso capacita para o ciclo completo de
+                desenvolvimento de sistemas, abrangendo desde a concepção e
+                especificação até a implementação, teste e manutenção,
+                utilizando ferramentas e técnicas modernas de engenharia de
+                software e gestão.
+              </p>
+              <a
+                href="files/certificate/Diploma.pdf"
+                target="_blank"
+                rel="Diploma Análise e Desenvolvimento de Sistemas"
+                class="project-action-link"
+                >Diploma
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style="font-size: 0.75rem"
+                ></i>
+              </a>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">Curso</div>
+              <h5 class="timeline-title">Desenvolvimento Web - Udemy</h5>
+              <div class="timeline-institution">Mai. de 2022– Ago. de 2025</div>
+              <p class="timeline-desc">
+                Formação completa em desenvolvimento web com mais de 117 horas
+                de conteúdo prático. Abrange desde o básico até o avançado,
+                incluindo front-end (HTML5, CSS3, JS, Bootstrap, jQuery),
+                back-end (PHP, MySQL, PDO, MVC, APIs) e desenvolvimento mobile
+                com IONIC e WordPress. Focado na criação de 20 projetos reais.
+              </p>
+              <a
+                href="files/certificate/Desenvolvimento Web - Udemy.pdf"
+                target="_blank"
+                rel="Curso Desenvolvimento Web"
+                class="project-action-link"
+                >Certificado
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style="font-size: 0.75rem"
+                ></i>
+              </a>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">Curso</div>
+              <h5 class="timeline-title">
+                NodeJs, ReactJS e React Native - Udemy
+              </h5>
+              <div class="timeline-institution">Mai. de 2022– Nov. de 2022</div>
+              <p class="timeline-desc">
+                Curso Full Stack prático e focado no mercado, abrangendo o
+                desenvolvimento de ponta a ponta: Backend com NodeJS e bancos de
+                dados, Frontend com ReactJS e Next.js, e Mobile com React
+                Native. Focado em boas práticas e criação de projetos reais a
+                partir do zero.
+              </p>
+              <a
+                href="files/certificate/NodeJs, ReactJS e React Native - Udemy.pdf"
+                target="_blank"
+                rel="Curso NodeJs, ReactJS e React Native"
+                class="project-action-link"
+                >Certificado
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style="font-size: 0.75rem"
+                ></i>
+              </a>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">Curso</div>
+              <h5 class="timeline-title">C# Curso Completo - Udemy.</h5>
+              <div class="timeline-institution">
+                Jan. de 2022 – Jul. de 2022
+              </div>
+              <p class="timeline-desc">
+                Curso completo de C# abrangendo desde fundamentos e estruturas
+                de controle até tópicos avançados como Orientação a Objetos,
+                Coleções, LINQ, Generics e tratamento de exceções. Focado na
+                aplicação prática e desenvolvimento de software robusto no
+                ecossistema .NET.
+              </p>
+              <a
+                href="files/certificate/C# Curso Completo - Udemy.pdf"
+                target="_blank"
+                rel="Curso C#"
+                class="project-action-link"
+                >Certificado
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style="font-size: 0.75rem"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h4 class="timeline-column-title">
+            <i class="fa-solid fa-briefcase"></i> Experiência
+          </h4>
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2025 - Presente</div>
+              <h5 class="timeline-title">
+                Analista / Desenvolvedora de Sistemas
+              </h5>
+              <div class="timeline-institution">TIP Brasil</div>
+              <p class="timeline-desc">
+                Atendimento e resolução de chamados de nível avançado (N3),
+                identificando a causa raiz de problemas críticos e propondo
+                melhorias contínuas. Manutenção de codigo e APIs, garantindo a
+                integração eficiente e segura com as ERP.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2023 - 2025</div>
+              <h5 class="timeline-title">
+                Desenvolvedora Web Júnior (Full-Stack)
+              </h5>
+              <div class="timeline-institution">Grupo Vialume</div>
+              <p class="timeline-desc">
+                Atuei de forma autônoma na liderança de todo o ciclo de
+                desenvolvimento, manutenção e correção de bugs de sistemas web.
+                Realizei a manutenção, modelagem e gerenciamento de banco de
+                dados da empresa. Prestei suporte técnico especializado para a
+                equipe interna da empresa.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2023 - 2023</div>
+              <h5 class="timeline-title">Desenvolvedora Front-End</h5>
+              <div class="timeline-institution">Dev Place.</div>
+              <p class="timeline-desc">
+                Participei de desenvolvimento, manutenção e otimização de
+                interfaces, integração do front-end com APIs e atuei na
+                manutenção e modernização de códigos legados. Implementei novos
+                recursos de sistema, fluxos de download, relatórios e
+                integrações de comunicação (WhatsApp). Participei de sprints e
+                reuniões técnicas focadas na resolução ágil de demandas para
+                grandes empresas, Como Metax, Sherwin Williams, Gama
+                Fertilizantes, High Touch
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2022 - 2023</div>
+              <h5 class="timeline-title">Tecnico de Informatica</h5>
+              <div class="timeline-institution">Taranis Solar</div>
+              <p class="timeline-desc">
+                Participei de Desenvolvimento e a manutenção de sistemas web
+                para cadastro de máquinas. Otimizei a plataforma com foco na
+                melhoria da experiência do usuário. Prestei suporte técnico para
+                clientes e equipe interna.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-credits">
+          © 2026 Criação de <span>Larissa Balieiro</span>
+        </div>
+        <div class="footer-links">
+          <a href="#inicio" class="footer-link-item">Início</a>
+          <a href="#projeto" class="footer-link-item">Projetos</a>
+          <a href="#saved" class="footer-link-item">Resumo</a>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="bottom-dock">
+      <a href="#inicio" class="dock-item active" data-title="Início"
+        ><i class="fa-solid fa-house"></i
+      ></a>
+      <a href="#projeto" class="dock-item" data-title="Projetos"
+        ><i class="fa-solid fa-briefcase"></i
+      ></a>
+      <a href="#saved" class="dock-item" data-title="Resumo"
+        ><i class="fa-regular fa-bookmark"></i
+      ></a>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
     
-          <h1 class="titulo2">Projetos</h1>
-          
-          <div class="cards-section">
-            
-              <div class="cards">
-                <img  width="280" height="250" src="img/lanna.png" alt="">
-                <a href="https://magical-tarsier-81dedc.netlify.app/" class="btn-link">Lanna Makeup</a>
-              </div>
-              <div class="cards">
-                <img  width="280" height="250" src="img/spotify.png" alt="">
-                <a href="Projeto_Spotify-20220722T001711Z-001.zip" class="btn-link">Link Para Dowload</a>
-              </div>
-              <div class="cards">
-               <img width="295" height="250" src="img/game.png" alt="">
-               <a href="GameLabirinto.rar" class="btn-link">Link Para Download</a>
-              </div>
-        </div>
-        <a class="btn-ver" href="https://github.com/LariBalieiro"  >Ver mais Projetos</a>
-      
-      </section><!--Fim Sessão3-->
-
-      <section class="caixa2 " ><!--Inicio Sessão4-->
-         <a name="habilidades">
-          <h1 class="titulo2">Habilidades</h1> 
-          <div class="cardsN reveal">
-              
-            <div class="box">
-              <h3>html</h3>
-              <i class="fa fa-html5"></i>
-              <div class="content">
-                <p>É uma linguagem de marcação utilizada na construção de páginas WEB.</p>
-              </div>
-            </div>
-
-            <div class="box">
-              <h3>css</h3>
-              <i class="fa fa-css3"></i>
-              <div class="content">
-                <p>É um mecanismo para adicionar estilo a um documento WEB.</p>
-            </div>
-            </div>
-
-            <div class="box">
-              <h3>Java Script</h3>
-              <i class="fa"> <img src="img/js (1).ico" alt="" width="130px"> </i>
-              <div class="content">
-                <p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da WEB.</p>
-              </div>
-            </div>
-
-            <div class="box">
-              <h3>Bootstrap</h3>
-              <i class="fa"> <img src="img/bootstrap.ico" alt="" width="150px"> </i>
-              <div class="content">
-                <p>Bootstrap é um framework web, usando HTML, CSS e JavaScript, 
-                  baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável
-                  e responsivo.</p>
-              </div>
-            </div>
-
-            <div class="box">
-              <h3>C#</h3>
-              <i class="fa"> <img src="img/csharp-2.png" alt="" width="150px"> </i>
-              <div class="content">
-                <p>É uma linguagem de programação, de tipagem forte, 
-                  A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas 
-                  influências de outras linguagens de programação, como Object Pascal e, 
-                  principalmente, Java.</p>
-              </div>
-            </div>
-            
-            <div class="box">
-              <h3>Python</h3>
-              <i class="fa"> <img src="img/python.ico" alt="" width="150px"> </i>
-              <div class="content">
-                <p>Python é uma linguagem de programação de alto nível, 
-                  interpretada de script, imperativa, orientada a objetos, funcional,
-                  de tipagem dinâmica e forte.</p>
-              </div>
-            </div>
-
-            <div class="box">
-              <h3>SQL</h3>
-              <i class="fa"> <img src="img/sqllite.ico" alt="" width="150px"> </i>
-              <div class="content">
-                <p>É a linguagem de pesquisa declarativa padrão para banco de dados relacional.
-                  Muitas das características originais do SQL foram inspiradas na álgebra relacional.</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </section><!--Fim Sessão4-->
-
-      <footer class="#area-principal" id="rodape" ><!--Inicio Rodapé-->
-       <h4> E-mail para contato: larissa.cristina.balieiro@gmail.com</h4>
-        <h4>Feito por Larissa Balieiro</h4>
-        <h4>Imagem criadas: Bitmoji</h4>
-        <div id="rodapeicone">
-          <a href="https://www.linkedin.com/in/larissa-balieiro-020833191/"><img width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /></a>
-          <a href="https://github.com/LariBalieiro"><img width="70" src="img/git.png" ></a>
-        </div>
-      </footer><!--Fim Rodapé-->
-
-      <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/05/30/00/20260530003617-8AG32WC9.js" defer></script>
+    
   </body>
 </html>
