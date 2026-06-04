@@ -8,8 +8,8 @@
  </div>
  
  <br>
- 
-<img width="1898" height="942" alt="Image" src="https://github.com/user-attachments/assets/b06d4094-30fe-4f1c-8ebd-1ef147e2a583" />
+
+ <img width="1896" height="909" alt="Image" src="https://github.com/user-attachments/assets/fd239738-97c5-421a-906d-48cfe3bc460a" />
 
 <div>  
   <a href="https://www.linkedin.com/mwlite/in/larissa-balieiro-020833191" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
